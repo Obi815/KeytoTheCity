@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <script src="script.js"> </script>
     <div class="wrapper">
       <header>
         <h1>Password Generator</h1>
@@ -25,6 +26,23 @@
           ></textarea>
         </div>
         <div class="card-footer">
+
+          <!-- added another class for the passsword settings-->
+          <div class="settings">
+            <label for="length">Password Length</label>
+            <input type="number" id="length" min="4" max="128" value="128"/>
+            <label for="upppercase">Include Uppercase Letters</label>
+            <input type="checkbox" id="uppercase" checked />
+            <label for="lowercase">Include Lowercase Letters</label>
+            <input type="checkbox" id="lowercase" checked />
+            <label for="numbers">Include Numbers</label>
+            <input type="checkbox" id="numbers" checked/>
+            <label for="special">Include Special Characters </label>
+            <input type="checkbox" id="special" checked/>
+
+          </div>
+          
+          <!-- Creating a generate button -->
           <button id="generate" class="btn">Generate Password</button>
         </div>
       </div>
